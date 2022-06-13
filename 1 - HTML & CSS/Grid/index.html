@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas:
+                "header header header header"
+                "main main aside"
+                "footer footer footer footer"
+        }
+
+        .gridSmall {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+
+        .class {
+            background-color: aqua;
+            border: 1px solid black;
+        }
+
+        .A {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+
+        .B {
+            grid-column-start: 5;
+            grid-column-end: 6;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+
+        .C {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+
+        .D {
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+
+
+
+        .E {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+
+        .F {
+            grid-column-start: 2;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+
+        .G {
+            grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <nav>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+        </nav>
+
+        <main>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </main>
+
+        <aside>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </aside>
+
+        <footer>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </footer>
+    </div>
+
+    <!-- <div class="grid">
+        <div class="class A">A</div>
+        <div class="class B">B</div>
+        <div class="class C">C</div>
+        <div class="class gridSmall D">
+            <div class="class E">E</div>
+            <div class="class F">F</div>
+            <div class="class G">G</div>
+        </div>
+
+    </div> -->
+</body>
+
+</html>

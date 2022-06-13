@@ -1,0 +1,23 @@
+const arr = [
+    {
+        name:"Katya",
+        lastName:"Ru",
+        age:"28"
+    },
+]
+
+function hendleSubmit(e) {
+    e.preventDefault()
+    const name=e.target.children.name.value
+    const lastname=e.target.children.lastname.value
+    const age=e.target.children.age.value
+
+
+    function hendlePush() {
+        arr.push({name:name, lastName:lastname,age:age})
+        console.log(arr)
+    }
+
+    hendlePush()
+    return console.log(name, lastname, age)
+}
